@@ -1058,6 +1058,63 @@
   }
   .img-box:hover .img-box-edit-overlay { opacity: 1; }
   .img-box-edit-overlay span { font-size: 1.2rem; }
+
+  /* ===== CALCULATOR (اسٹاک ٹیب) ===== */
+  .calc-card{background:#FFF9C4;border:3px solid #000;border-radius:16px;box-shadow:4px 4px 0 #000;margin-bottom:14px;overflow:hidden;}
+  .calc-header{background:#FFD600;padding:16px 14px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;}
+  .calc-title{font-family:Arial,Helvetica,sans-serif;font-size:1.8rem;font-weight:900;letter-spacing:3px;color:#000;}
+  .calc-arrow{font-size:0.8rem;font-weight:800;color:#000;background:#fff;border:2px solid #000;border-radius:20px;padding:3px 12px;}
+  .calc-body{padding:12px;border-top:3px solid #000;}
+  .calc-box{background:#fff;border:2px solid #000;border-radius:12px;padding:12px;margin-bottom:12px;box-shadow:2px 2px 0 #000;}
+  .calc-box-title{font-size:0.95rem;font-weight:800;color:#000;border-bottom:2px solid #000;padding-bottom:6px;margin-bottom:10px;}
+  .calc-types{display:flex;gap:6px;margin-bottom:10px;}
+  .calc-type-btn{flex:1;border:2px solid #000;background:#fff;color:#000;border-radius:10px;padding:10px 4px;font-family:inherit;font-size:0.8rem;font-weight:800;cursor:pointer;}
+  .calc-type-btn.active{background:#000;color:#FFD600;}
+  .calc-two{display:grid;grid-template-columns:1.4fr 1fr;gap:8px;margin-top:8px;}
+  .calc-hint{background:#F5F5F5;border:2px dashed #999;border-radius:10px;padding:10px;font-size:0.78rem;text-align:center;margin-top:10px;}
+  .calc-perline{background:#C8E6C9;border:2px solid #2E7D32;border-radius:10px;padding:10px 12px;font-size:1.1rem;font-weight:900;color:#000;text-align:center;margin-top:10px;}
+  .calc-tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(95px,1fr));gap:6px;margin-top:8px;}
+  .calc-tier{background:#FFF3E0;border:2px solid #000;border-radius:10px;padding:6px 4px;text-align:center;}
+  .calc-tier-q{font-size:0.72rem;font-weight:800;color:#000;}
+  .calc-tier-p{font-size:0.95rem;font-weight:900;color:#CC5500;}
+  .calc-custom{background:#E3F2FD;border:2px solid #1565C0;border-radius:10px;padding:8px 10px;margin-top:10px;}
+  .calc-custom-title{font-size:0.75rem;font-weight:800;color:#0D47A1;margin-bottom:6px;}
+  .calc-custom-row{display:grid;grid-template-columns:1fr 1fr;gap:6px;align-items:center;}
+  .calc-custom-out{grid-column:1 / -1;background:#000;color:#FFD600;border-radius:8px;padding:8px;text-align:center;font-size:1.1rem;font-weight:900;}
+  .calc-item{background:#fff;border:2px solid #000;border-radius:12px;padding:0;margin-bottom:10px;box-shadow:2px 2px 0 #000;overflow:hidden;}
+  .calc-row{display:flex;align-items:center;gap:10px;padding:12px;cursor:pointer;background:#FFFDE7;}
+  .calc-row:active{background:#FFF59D;}
+  .calc-row-info{flex:1;min-width:0;}
+  .calc-row-name{font-size:1.25rem;font-weight:900;color:#000;line-height:1.5;}
+  .calc-row-sub{font-size:0.72rem;font-weight:700;color:#555;margin-top:1px;}
+  .calc-row-price{background:#000;border-radius:10px;padding:6px 12px;text-align:center;min-width:92px;flex-shrink:0;}
+  .calc-row-price-val{font-size:1.3rem;font-weight:900;color:#FFD600;line-height:1.4;direction:ltr;}
+  .calc-row-price-lbl{font-size:0.72rem;font-weight:800;color:#fff;}
+  .calc-row-arrow{font-size:0.9rem;font-weight:900;color:#000;flex-shrink:0;}
+  .calc-item-body{padding:0 12px 12px;border-top:2px solid #000;background:#fff;}
+  .calc-item-actions{display:flex;justify-content:space-between;align-items:center;gap:8px;padding-top:10px;}
+  .calc-item-top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;}
+  .calc-item-name{font-size:1.05rem;font-weight:900;color:#000;}
+  .calc-item-en{font-size:0.72rem;color:#555;direction:ltr;text-align:right;}
+  .calc-item-meta{font-size:0.8rem;font-weight:800;color:#CC5500;margin-top:2px;}
+  .calc-item-btns{display:flex;gap:6px;flex-shrink:0;}
+  .calc-empty{text-align:center;padding:18px;font-size:0.82rem;color:#555;}
+
+  /* ===== اسٹاک آئٹم: نیا باکس ===== */
+  .stock-name-big{font-size:1.4rem !important;font-weight:900;color:#000;line-height:1.7;border-bottom:2px solid #FFC107;padding-bottom:3px;margin-bottom:8px;
+    text-shadow:1px 0 #FFC107,-1px 0 #FFC107,0 1px #FFC107,0 -1px #FFC107,1px 1px #FFC107,-1px -1px #FFC107,1px -1px #FFC107,-1px 1px #FFC107;}
+  .stock-item.purchased .stock-name-big{text-shadow:none;}
+  .stock-name-row{display:flex;align-items:flex-start;justify-content:space-between;gap:6px;}
+  .stock-entry-row{display:flex;align-items:center;gap:6px;}
+  .stock-entry-row input,.stock-entry-row select{padding:7px 6px;font-size:0.88rem;border-radius:9px;min-width:0;font-family:inherit;font-weight:800;color:#000;
+    -webkit-user-select:text;user-select:text;}
+  .stock-entry-row .stock-tick-btn{width:50px;min-width:50px;height:50px;font-size:2rem;border:none;padding:0;}
+  .stock-prev{background:#F3F8FF;border:1px dashed #1565C0;border-radius:10px;padding:6px 10px;margin-top:8px;}
+  .stock-prev-title{font-size:0.72rem;font-weight:800;color:#1565C0;}
+  .stock-prev-vals{display:flex;justify-content:space-between;gap:8px;font-size:0.82rem;font-weight:800;margin-top:2px;}
+  .stock-prev-btn{margin-top:6px;width:100%;background:#1565C0;color:#fff;border:none;border-radius:8px;padding:7px;font-family:inherit;font-size:0.78rem;font-weight:800;cursor:pointer;}
+  .stock-prev-btn:active{transform:scale(0.97);}
+  .stock-prev-none{font-size:0.72rem;color:#777;text-align:center;}
 </style>
 </head>
 <body>
@@ -1626,15 +1683,77 @@
     </div>
   </div>
 
+  <!-- ===== CALCULATOR BOX ===== -->
+  <div class="calc-card" id="calcCard">
+    <div class="calc-header" onclick="toggleCalc()">
+      <span class="calc-title">🧮 CALCULATOR</span>
+      <span class="calc-arrow" id="calcArrow">▼ کھولیں</span>
+    </div>
+    <div class="calc-body" id="calcBody" style="display:none;">
+
+      <!-- سرچ -->
+      <div class="calc-box" style="padding:10px;">
+        <input type="text" id="calcSearch" oninput="renderCalc()" placeholder="🔍 چیز تلاش کریں — اردو یا English (مثلاً چینی / sugar)">
+      </div>
+
+      <!-- نئی چیز بٹن -->
+      <button class="btn btn-full" id="calcAddBtn" onclick="calcShowForm(true)" style="background:#000;color:#FFD600;padding:14px;font-size:0.95rem;margin-bottom:12px;">➕ نئی چیز شامل کریں</button>
+
+      <!-- فارم (نئی چیز / ایڈٹ) -->
+      <div class="calc-box" id="calcFormBox" style="display:none;">
+        <div class="calc-box-title" id="calcFormTitle">➕ نئی چیز شامل کریں</div>
+
+        <label class="input-label">چیز کا نام</label>
+        <input type="text" id="calcName" placeholder="مثلاً چینی، چارٹ مصالحہ، تیل">
+
+        <label class="input-label" style="margin-top:8px;">انگریزی نام (اختیاری — انگریزی سرچ کے لیے)</label>
+        <input type="text" id="calcNameEn" placeholder="e.g. Sugar, Chaat Masala, Oil" style="direction:ltr;text-align:left;">
+
+        <label class="input-label" style="margin-top:8px;">حساب کی قسم</label>
+        <div class="calc-types">
+          <button type="button" class="calc-type-btn active" data-t="w" onclick="calcSetType('w')">⚖️ گرام / کلو</button>
+          <button type="button" class="calc-type-btn" data-t="l" onclick="calcSetType('l')">💧 ملی لیٹر / لیٹر</button>
+          <button type="button" class="calc-type-btn" data-t="p" onclick="calcSetType('p')">🔢 تعداد (پیس)</button>
+        </div>
+
+        <div class="calc-two">
+          <div>
+            <label class="input-label">مقدار</label>
+            <input type="number" id="calcQty" inputmode="decimal" placeholder="مثلاً 500" oninput="calcUpdatePreview()">
+          </div>
+          <div>
+            <label class="input-label">یونٹ</label>
+            <select id="calcQtyUnit" onchange="calcUpdatePreview()"></select>
+          </div>
+        </div>
+
+        <label class="input-label" style="margin-top:8px;">خریداری قیمت (₨)</label>
+        <input type="number" id="calcPrice" inputmode="decimal" placeholder="مثلاً 250" oninput="calcUpdatePreview()">
+
+        <div id="calcFormPreview"></div>
+        <div id="calcFormCustomWrap"></div>
+
+        <div style="display:flex;gap:8px;margin-top:12px;">
+          <button class="btn btn-success" style="flex:2;padding:12px;" id="calcSaveBtn" onclick="calcSaveItem()">💾 محفوظ کریں</button>
+          <button class="btn btn-outline" style="flex:1;padding:12px;color:#F44336;border-color:#F44336;" onclick="calcResetForm()">❌ بند</button>
+        </div>
+      </div>
+
+      <!-- محفوظ اشیاء -->
+      <div id="calcCount" style="font-size:0.8rem;font-weight:800;margin-bottom:8px;text-align:center;"></div>
+      <div id="calcList"></div>
+    </div>
+  </div>
+
   <!-- نئی چیز شامل کریں -->
   <div class="card" style="margin-bottom:12px;">
     <div class="card-title"><span>➕</span> نئی چیز شامل کریں</div>
     <div style="background:rgba(255,107,0,0.07);border:1px solid var(--saffron);border-radius:10px;padding:8px 12px;margin-bottom:10px;font-size:0.75rem;color:#555;font-weight:600;">
-      💡 نام اور مقدار مستقل رہیں گے — قیمت روزانہ ہر چیز کے سامنے لکھیں
+      💡 نام مستقل رہے گا — مقدار، یونٹ اور قیمت روزانہ ہر چیز کے خانے میں لکھیں
     </div>
     <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;">
       <input type="text" id="stockNewName" placeholder="چیز کا نام (مثلاً چکن، پیاز)" style="flex:2;min-width:100px;">
-      <input type="text" id="stockNewQty" placeholder="مقدار (مثلاً 2kg)" style="flex:1;min-width:70px;">
+      <input type="text" id="stockNewQty" placeholder="مقدار (اختیاری)" style="flex:1;min-width:70px;">
       <button class="btn btn-success" onclick="addStockItem()" style="white-space:nowrap;padding:10px 14px;">➕ شامل</button>
     </div>
   </div>
@@ -2422,8 +2541,21 @@ function loadData(parsed) {
     qty: s.qty !== undefined ? String(s.qty) + (s.unit ? ' ' + s.unit : '') : '',
     price: s.price || 0,
     purchased: s.purchased || false,
-    image: s.image || ''
+    image: s.image || '',
+    qv: s.qv,
+    qu: s.qu,
+    hist: s.hist
   }));
+  // نئے فیلڈز درست کریں (پرانے ڈیٹا کے لیے)
+  appData.stock.forEach(s => {
+    if (!s.hist || typeof s.hist !== 'object') s.hist = {};
+    if (!STOCK_QTY_UNITS[s.qu]) s.qu = 'kg';
+    if (s.qv === undefined || s.qv === null) {
+      const pq = stockParseQty(s.qty);
+      if (pq) { s.qv = pq.v; s.qu = pq.u; s.qty = stockQtyText(pq.v, pq.u); }
+      else s.qv = 0;
+    }
+  });
   if (!appData.recipes) appData.recipes = [];
   if (!appData.deals) appData.deals = [];
   if (!appData.editHistory) appData.editHistory = {};
@@ -2439,8 +2571,14 @@ function loadData(parsed) {
   const today = localDate();
   if (appData.stockLastResetDate !== today) {
     appData.stock.forEach(s => {
+      // پہلی بار: پچھلے دن کی خریداری سابقہ ریکارڈ میں محفوظ کریں
+      if (s.purchased && s.price > 0 && appData.stockLastResetDate && Object.keys(s.hist || {}).length === 0) {
+        stockRecordHistory(s, appData.stockLastResetDate);
+      }
       s.purchased = false;
       s.price = 0;
+      s.qv = 0;
+      s.qty = '';
     });
     appData.stockLastResetDate = today;
     if (appData.days && appData.days[today]) {
@@ -4212,10 +4350,14 @@ function addStockItem() {
 
   if (!name) { showToast('نام لکھیں'); return; }
 
+  const pq = stockParseQty(qtyStr);
   appData.stock.push({
     id: Date.now(),
     name,
-    qty: qtyStr || '',
+    qty: pq ? stockQtyText(pq.v, pq.u) : '',
+    qv: pq ? pq.v : 0,
+    qu: pq ? pq.u : 'kg',
+    hist: {},
     price: 0,
     purchased: false
   });
@@ -4247,6 +4389,7 @@ function togglePurchased(id) {
       amount: item.price,
       _stockId: id
     });
+    stockRecordHistory(item, date);
     saveData();
     updateDisplays();
   } else if (!item.purchased && item.price > 0) {
@@ -4254,6 +4397,7 @@ function togglePurchased(id) {
     const date = getStockDate();
     const day = getDayData(date);
     day.expenses = day.expenses.filter(e => e._stockId !== id);
+    stockRemoveHistory(item, date);
     saveData();
     updateDisplays();
   } else {
@@ -4278,35 +4422,29 @@ function deleteStockItem(id) {
 function editStockItem(id) {
   const item = appData.stock.find(s => s.id === id);
   if (!item) return;
+  const unitOpts = Object.keys(STOCK_QTY_UNITS).map(u => `<option value="${u}"${item.qu === u ? ' selected' : ''}>${STOCK_QTY_UNITS[u]}</option>`).join('');
   openModal('چیز ایڈٹ کریں', `
     <div class="input-group">
       <label class="input-label">نام</label>
-      <input type="text" id="es_name" value="${item.name}">
+      <input type="text" id="es_name" value="${String(item.name).replace(/"/g, '&quot;')}">
     </div>
     <div class="input-group">
-      <label class="input-label">مقدار (مثلاً 2kg، 1 درجن)</label>
-      <input type="text" id="es_qty" value="${item.qty || ''}">
+      <label class="input-label">آج کی مقدار اور یونٹ</label>
+      <div style="display:flex;gap:6px;">
+        <input type="number" id="es_qv" value="${item.qv > 0 ? item.qv : ''}" placeholder="مقدار" style="flex:1;">
+        <select id="es_qu" style="flex:1;">${unitOpts}</select>
+      </div>
     </div>
     <div class="input-group">
-      <label class="input-label">آج کی قیمت (روپے)</label>
+      <label class="input-label">آج کی رقم (روپے)</label>
       <input type="number" id="es_price" value="${item.price || 0}">
     </div>
   `, () => {
-    const wasP = item.purchased;
     item.name = document.getElementById('es_name').value.trim() || item.name;
-    item.qty = document.getElementById('es_qty').value.trim();
+    item.qv = parseFloat(document.getElementById('es_qv').value) || 0;
+    item.qu = document.getElementById('es_qu').value;
     item.price = parseFloat(document.getElementById('es_price').value) || 0;
-    // اخراجات اپڈیٹ کریں اگر خریدا ہوا تھا
-    if (wasP) {
-      const date = getStockDate();
-      const day = getDayData(date);
-      day.expenses = day.expenses.filter(e => e._stockId !== id);
-      if (item.price > 0) {
-        day.expenses.push({ name: '🛒 ' + item.name + (item.qty ? ' (' + item.qty + ')' : ''), amount: item.price, _stockId: id });
-      }
-      updateDisplays();
-    }
-    saveData();
+    stockSyncItem(item);
     renderStock();
     showToast('✅ اپڈیٹ ہو گیا');
   });
@@ -4314,8 +4452,8 @@ function editStockItem(id) {
 
 function resetAllPurchases() {
   if (!confirm('تمام چیزوں کی ٹک اور قیمت ری سیٹ کریں؟')) return;
-  appData.stock.forEach(s => { s.purchased = false; s.price = 0; });
   const date = getStockDate();
+  appData.stock.forEach(s => { s.purchased = false; s.price = 0; s.qv = 0; s.qty = ''; stockRemoveHistory(s, date); });
   if (appData.days[date]) {
     appData.days[date].expenses = (appData.days[date].expenses || []).filter(e => !e._stockId);
   }
@@ -4364,38 +4502,57 @@ function renderStock() {
     div.setAttribute('draggable', 'true');
     div.setAttribute('data-id', item.id);
 
+    const stockDate = getStockDate();
+    const prev = stockPrevEntry(item, stockDate);
+    let prevHTML;
+    if (prev) {
+      const label = prev.date === stockYesterday(stockDate) ? 'کل کی خریداری' : 'سابقہ خریداری (' + formatDate(prev.date) + ')';
+      const prevQtyTxt = prev.q || (prev.v > 0 ? stockQtyText(prev.v, prev.u) : '—');
+      prevHTML = `
+        <div class="stock-prev">
+          <div class="stock-prev-title">📅 ${label}</div>
+          <div class="stock-prev-vals">
+            <span>کل مقدار: ${prevQtyTxt}</span>
+            <span>کل رقم: ₨ ${Number(prev.p).toLocaleString()}</span>
+          </div>
+          <button class="stock-prev-btn" onclick="stockRepeatPrev(${item.id})">🔁 سابقہ رقم ہی شامل کریں</button>
+        </div>`;
+    } else {
+      prevHTML = `<div class="stock-prev stock-prev-none">📅 سابقہ خریداری: ابھی کوئی ریکارڈ نہیں</div>`;
+    }
+    const inBorder = item.purchased ? '#4CAF50' : 'var(--saffron)';
+    const inBg = item.purchased ? 'rgba(76,175,80,0.08)' : '#F5F5F5';
+    const unitOpts = Object.keys(STOCK_QTY_UNITS).map(u => `<option value="${u}"${item.qu === u ? ' selected' : ''}>${STOCK_QTY_UNITS[u]}</option>`).join('');
+
     div.innerHTML = `
-      <div class="stock-item-inner">
-        <!-- تصویر کا ڈبہ -->
-        <div class="img-box" style="width:52px;height:52px;margin:10px 0 10px 8px;border-radius:8px;" onclick="pickStockImage(${item.id})" title="پکچر لگائیں / بدلیں">
-          ${item.image
-            ? `<img src="${item.image}" alt="${item.name}"><div class="img-box-edit-overlay"><span>✏️</span></div>`
-            : `<div class="img-box-placeholder">📷<br>تصویر</div>`}
-        </div>
-        <!-- بڑا ٹک بٹن -->
-        <button class="stock-tick-btn" onclick="togglePurchased(${item.id})" title="${item.purchased ? 'ان-ٹک کریں' : 'خریدا گیا ✅'}" style="font-size:2.2rem;width:72px;min-width:72px;height:72px;">
-          ${item.purchased ? '✅' : '⭕'}
-        </button>
-        <!-- معلومات اور قیمت کا خانہ -->
-        <div class="stock-item-info" style="flex:1;padding:8px 10px;">
-          <div class="stock-name" style="font-size:1.05rem;">${item.name}</div>
-          <div class="stock-item-meta" style="margin-top:4px;gap:6px;align-items:center;">
-            ${item.qty ? `<span class="stock-qty-badge">📦 ${item.qty}</span>` : ''}
-            ${!item.purchased ? `<span class="not-purchased-icon">⚠️ باقی</span>` : ''}
+      <div class="stock-item-inner" style="align-items:stretch;">
+        <div class="stock-item-info" style="flex:1;min-width:0;padding:8px 10px;">
+          <!-- نام: اوپر، بڑا اور واضح -->
+          <div class="stock-name-row">
+            <div class="stock-name stock-name-big">${item.name}</div>
+            ${!item.purchased ? `<span class="not-purchased-icon" style="flex-shrink:0;">⚠️ باقی</span>` : ''}
           </div>
-          <!-- قیمت کا خانہ: روزانہ بھریں -->
-          <div style="display:flex;align-items:center;gap:6px;margin-top:6px;">
-            <input type="number" placeholder="آج کی قیمت ₨"
-              value="${item.price > 0 ? item.price : ''}"
-              id="stockprice_${item.id}"
-              onclick="this.select()"
-              onchange="updateStockPrice(${item.id}, this.value)"
-              style="width:130px;flex:none;padding:6px 10px;font-size:0.85rem;background:${item.purchased ? 'rgba(76,175,80,0.08)' : '#F5F5F5'};border:2px solid ${item.purchased ? '#4CAF50' : 'var(--saffron)'};border-radius:10px;color:#000;font-family:inherit;font-weight:700;direction:ltr;text-align:right;">
-            ${item.price > 0 ? `<span style="font-size:0.78rem;font-weight:800;color:${item.purchased ? '#2E7D32' : 'var(--saffron)'};">₨ ${item.price.toLocaleString()}</span>` : `<span style="font-size:0.72rem;color:#999;">قیمت نہیں</span>`}
+          <!-- ایک لائن: ٹک ⭕ | مقدار | یونٹ | رقم -->
+          <div class="stock-entry-row">
+            <button class="stock-tick-btn" onclick="togglePurchased(${item.id})" title="${item.purchased ? 'ان-ٹک کریں' : 'خریدا گیا ✅'}">
+              ${item.purchased ? '✅' : '⭕'}
+            </button>
+            <input type="number" inputmode="decimal" placeholder="مقدار"
+              value="${item.qv > 0 ? item.qv : ''}" id="stockqv_${item.id}"
+              onclick="this.select()" onchange="updateStockQty(${item.id}, this.value)"
+              style="flex:1;background:${inBg};border:2px solid ${inBorder};direction:ltr;text-align:right;">
+            <select id="stockqu_${item.id}" onchange="updateStockUnit(${item.id}, this.value)"
+              style="flex:1.2;background:${inBg};border:2px solid ${inBorder};">${unitOpts}</select>
+            <input type="number" inputmode="decimal" placeholder="رقم ₨"
+              value="${item.price > 0 ? item.price : ''}" id="stockprice_${item.id}"
+              onclick="this.select()" onchange="updateStockPrice(${item.id}, this.value)"
+              style="flex:1.2;background:${inBg};border:2px solid ${inBorder};direction:ltr;text-align:right;">
           </div>
+          <!-- سابقہ خریداری -->
+          ${prevHTML}
         </div>
-        <!-- ایڈٹ + ڈریگ -->
-        <div style="display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 6px 8px 0;">
+        <!-- ایڈٹ + حذف + ڈریگ -->
+        <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:8px 6px 8px 0;">
           <button class="btn btn-outline btn-sm" onclick="editStockItem(${item.id})" style="padding:5px 8px;font-size:0.78rem;">✏️</button>
           <button class="btn btn-danger btn-sm" onclick="deleteStockItem(${item.id})" style="padding:5px 8px;font-size:0.78rem;">🗑️</button>
           <div class="stock-drag-handle" title="ترتیب بدلیں" style="font-size:1.3rem;padding:4px 6px;cursor:grab;color:#AAA;border-top:1px solid #EEE;width:100%;text-align:center;">⠿</div>
@@ -4433,23 +4590,117 @@ function renderStock() {
   });
 }
 
-function updateStockPrice(id, val) {
-  const item = appData.stock.find(s => s.id === id);
-  if (!item) return;
-  const newPrice = parseFloat(val) || 0;
-  item.price = newPrice;
-  // اگر خریدا ہوا ہے تو اخراجات فوری اپڈیٹ کریں
+// ============================================================
+// اسٹاک: روزانہ مقدار / یونٹ / رقم + سابقہ خریداری
+// ============================================================
+const STOCK_QTY_UNITS = { g: 'گرام', kg: 'کلوگرام', ml: 'ملی لیٹر', l: 'لیٹر', pc: 'عدد' };
+
+function stockQtyText(qv, qu) {
+  const v = parseFloat(qv);
+  return v > 0 ? (v + ' ' + (STOCK_QTY_UNITS[qu] || '')).trim() : '';
+}
+
+// "2kg" / "500 گرام" جیسا متن → {v, u}
+function stockParseQty(str) {
+  if (!str) return null;
+  let s = String(str).replace(/[۰-۹]/g, d => '۰۱۲۳۴۵۶۷۸۹'.indexOf(d)).replace(/[٠-٩]/g, d => '٠١٢٣٤٥٦٧٨٩'.indexOf(d));
+  const m = s.match(/(\d+(?:\.\d+)?)\s*(.*)/);
+  if (!m) return null;
+  const v = parseFloat(m[1]);
+  if (!(v > 0)) return null;
+  const w = (m[2] || '').toLowerCase().trim();
+  let u = 'pc';
+  if (/کلو|kg|kilo/.test(w)) u = 'kg';
+  else if (/ملی|ml/.test(w)) u = 'ml';
+  else if (/لیٹر|ltr|liter|litre|^l$/.test(w)) u = 'l';
+  else if (/گرام|gram|gm|^g$/.test(w)) u = 'g';
+  return { v, u };
+}
+
+// سابقہ خریداری کا ریکارڈ (ہر چیز کی آخری 10 تاریخیں)
+function stockRecordHistory(item, date) {
+  if (!item.hist) item.hist = {};
+  item.hist[date] = { q: item.qty || '', v: item.qv || 0, u: item.qu || 'kg', p: item.price || 0 };
+  const keys = Object.keys(item.hist).sort();
+  while (keys.length > 10) delete item.hist[keys.shift()];
+}
+function stockRemoveHistory(item, date) {
+  if (item.hist && item.hist[date]) delete item.hist[date];
+}
+// منتخب تاریخ سے پہلے کی آخری خریداری
+function stockPrevEntry(item, date) {
+  const keys = Object.keys(item.hist || {}).filter(k => k < date).sort();
+  if (!keys.length) return null;
+  const k = keys[keys.length - 1];
+  return Object.assign({ date: k }, item.hist[k]);
+}
+function stockYesterday(date) {
+  const d = new Date(date + 'T00:00:00');
+  d.setDate(d.getDate() - 1);
+  return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+}
+
+function stockRefreshSummary() {
+  const st = appData.stock || [];
+  const purchased = st.filter(s => s.purchased).length;
+  const spend = st.filter(s => s.purchased).reduce((sum, s) => sum + (s.price || 0), 0);
+  document.getElementById('stockTotalCount').textContent = st.length;
+  document.getElementById('stockPurchasedCount').textContent = purchased;
+  document.getElementById('stockRemainingCount').textContent = st.length - purchased;
+  document.getElementById('stockTodaySpend').textContent = '₨ ' + spend.toLocaleString();
+}
+
+// چیز کی مقدار/رقم بدلنے پر: متن، اخراجات اور سابقہ ریکارڈ اپڈیٹ
+function stockSyncItem(item) {
+  item.qty = stockQtyText(item.qv, item.qu);
   if (item.purchased) {
     const date = getStockDate();
     const day = getDayData(date);
-    day.expenses = day.expenses.filter(e => e._stockId !== id);
-    if (newPrice > 0) {
-      day.expenses.push({ name: '🛒 ' + item.name + (item.qty ? ' (' + item.qty + ')' : ''), amount: newPrice, _stockId: id });
+    day.expenses = day.expenses.filter(e => e._stockId !== item.id);
+    if (item.price > 0) {
+      day.expenses.push({ name: '🛒 ' + item.name + (item.qty ? ' (' + item.qty + ')' : ''), amount: item.price, _stockId: item.id });
+      stockRecordHistory(item, date);
+    } else {
+      stockRemoveHistory(item, date);
     }
     updateDisplays();
   }
   saveData();
+  stockRefreshSummary();
+}
+
+function updateStockQty(id, val) {
+  const item = appData.stock.find(s => s.id === id);
+  if (!item) return;
+  item.qv = parseFloat(val) || 0;
+  stockSyncItem(item);
+}
+function updateStockUnit(id, val) {
+  const item = appData.stock.find(s => s.id === id);
+  if (!item) return;
+  item.qu = val;
+  stockSyncItem(item);
+}
+function updateStockPrice(id, val) {
+  const item = appData.stock.find(s => s.id === id);
+  if (!item) return;
+  item.price = parseFloat(val) || 0;
+  stockSyncItem(item);
+}
+
+// "سابقہ رقم ہی شامل کریں": سابقہ مقدار، یونٹ اور رقم آج کے خانوں میں بھر دیتا ہے
+// (اخراجات میں شامل کرنے کے لیے پھر ⭕ دبائیں)
+function stockRepeatPrev(id) {
+  const item = appData.stock.find(s => s.id === id);
+  if (!item) return;
+  const prev = stockPrevEntry(item, getStockDate());
+  if (!prev) return;
+  item.qv = prev.v || 0;
+  if (STOCK_QTY_UNITS[prev.u]) item.qu = prev.u;
+  item.price = prev.p || 0;
+  stockSyncItem(item);
   renderStock();
+  showToast('🔁 سابقہ مقدار اور رقم بھر دی گئی — اب ⭕ دبائیں');
 }
 
 // ============================================================
@@ -6362,6 +6613,271 @@ function deleteQaHistory(idx) {
 // START
 // ============================================================
 init();
+</script>
+<script>
+// ============================================================
+// CALCULATOR (اسٹاک ٹیب) — اپنے الگ ڈیٹا appData.calcItems میں، باقی ایپ سے کوئی تعلق نہیں
+// ============================================================
+const CALC_UNITS = {
+  g:  { label: 'گرام',        f: 1 },
+  kg: { label: 'کلوگرام',     f: 1000 },
+  ml: { label: 'ملی لیٹر',   f: 1 },
+  l:  { label: 'لیٹر',        f: 1000 },
+  pc: { label: 'عدد (پیس)',  f: 1 }
+};
+const CALC_TYPES = {
+  w: { units: ['g', 'kg'],  baseUnit: 'g',  perLabel: 'فی گرام',        tiers: [1, 10, 20, 50, 100] },
+  l: { units: ['ml', 'l'],  baseUnit: 'ml', perLabel: 'فی ملی لیٹر',   tiers: [1, 10, 20, 50, 100] },
+  p: { units: ['pc'],       baseUnit: 'pc', perLabel: 'فی عدد (پیس)',  tiers: [1, 5, 10, 20, 50] }
+};
+let calcType = 'w';
+let calcEditId = null;
+let calcFormPerUnit = 0;
+const calcOpen = new Set(); // کھلی ہوئی لائنیں
+
+function calcEl(id) { return document.getElementById(id); }
+function calcVal(id) { const e = calcEl(id); return e ? e.value : ''; }
+function calcEsc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function calcItems() {
+  if (!Array.isArray(appData.calcItems)) appData.calcItems = [];
+  return appData.calcItems;
+}
+function calcFmt(n) {
+  if (!isFinite(n)) return '0';
+  const d = Math.abs(n) < 1 ? 3 : 2;
+  const m = Math.pow(10, d);
+  return (Math.round(n * m) / m).toLocaleString('en-US', { maximumFractionDigits: d });
+}
+// اردو/انگریزی سرچ کے لیے یکساں شکل
+function calcNorm(s) {
+  return String(s || '').toLowerCase()
+    .replace(/[\u064B-\u065F\u0670]/g, '')
+    .replace(/[يى]/g, 'ی').replace(/ك/g, 'ک').replace(/ۃ/g, 'ہ')
+    .replace(/[آأإ]/g, 'ا').replace(/ھ/g, 'ہ')
+    .replace(/\s+/g, ' ').trim();
+}
+
+// ---------- کھولنا / بند کرنا ----------
+function toggleCalc() {
+  const b = calcEl('calcBody');
+  const open = b.style.display === 'none';
+  b.style.display = open ? 'block' : 'none';
+  calcEl('calcArrow').textContent = open ? '▲ بند کریں' : '▼ کھولیں';
+  if (open) renderCalc();
+}
+
+// ---------- مشترکہ HTML ٹکڑے ----------
+function calcResultHTML(type, per) {
+  const T = CALC_TYPES[type];
+  const bl = CALC_UNITS[T.baseUnit].label;
+  let h = `<div class="calc-perline">${T.perLabel}: ₨ ${calcFmt(per)}</div><div class="calc-tiers">`;
+  T.tiers.forEach(n => {
+    h += `<div class="calc-tier"><div class="calc-tier-q">${n} ${bl}</div><div class="calc-tier-p">₨ ${calcFmt(per * n)}</div></div>`;
+  });
+  return h + '</div>';
+}
+function calcCustomBox(qtyId, unitId, outId, handler, type) {
+  const T = CALC_TYPES[type];
+  const order = [T.baseUnit].concat(T.units.filter(u => u !== T.baseUnit));
+  const opts = order.map(u => `<option value="${u}">${CALC_UNITS[u].label}</option>`).join('');
+  return `<div class="calc-custom">
+    <div class="calc-custom-title">🔎 کوئی بھی مقدار لکھیں — قیمت خود نکل آئے گی</div>
+    <div class="calc-custom-row">
+      <input type="number" id="${qtyId}" inputmode="decimal" placeholder="مقدار مثلاً 200" oninput="${handler}">
+      <select id="${unitId}" onchange="${handler}">${opts}</select>
+      <div class="calc-custom-out" id="${outId}">—</div>
+    </div>
+  </div>`;
+}
+function calcCustomOut(q, unitKey, per) {
+  q = parseFloat(q);
+  if (!(q > 0) || !(per > 0)) return '—';
+  return '₨ ' + calcFmt(q * CALC_UNITS[unitKey].f * per);
+}
+
+// ---------- فارم ----------
+function calcShowForm(show) {
+  calcEl('calcFormBox').style.display = show ? 'block' : 'none';
+  calcEl('calcAddBtn').style.display = show ? 'none' : 'block';
+  if (show) {
+    calcEl('calcFormBox').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+}
+function calcBuildFormCustom() {
+  const oldQ = calcVal('calcFormCustQty');
+  calcEl('calcFormCustomWrap').innerHTML =
+    calcCustomBox('calcFormCustQty', 'calcFormCustUnit', 'calcFormCustOut', 'calcFormCustomRun()', calcType);
+  if (oldQ) calcEl('calcFormCustQty').value = oldQ;
+}
+function calcSetType(t) {
+  calcType = t;
+  document.querySelectorAll('.calc-type-btn').forEach(b => b.classList.toggle('active', b.dataset.t === t));
+  calcEl('calcQtyUnit').innerHTML = CALC_TYPES[t].units
+    .map(u => `<option value="${u}">${CALC_UNITS[u].label}</option>`).join('');
+  calcBuildFormCustom();
+  calcUpdatePreview();
+}
+function calcUpdatePreview() {
+  const qty = parseFloat(calcVal('calcQty'));
+  const price = parseFloat(calcVal('calcPrice'));
+  const unit = calcVal('calcQtyUnit');
+  const box = calcEl('calcFormPreview');
+  if (!(qty > 0) || !(price > 0) || !CALC_UNITS[unit]) {
+    calcFormPerUnit = 0;
+    box.innerHTML = '<div class="calc-hint">مقدار اور خریداری قیمت لکھیں — حساب خود بخود یہاں نظر آئے گا</div>';
+  } else {
+    calcFormPerUnit = price / (qty * CALC_UNITS[unit].f);
+    box.innerHTML = calcResultHTML(calcType, calcFormPerUnit);
+  }
+  calcFormCustomRun();
+}
+function calcFormCustomRun() {
+  const out = calcEl('calcFormCustOut');
+  if (out) out.textContent = calcCustomOut(calcVal('calcFormCustQty'), calcVal('calcFormCustUnit'), calcFormPerUnit);
+}
+function calcResetForm() {
+  calcEditId = null;
+  ['calcName', 'calcNameEn', 'calcQty', 'calcPrice', 'calcFormCustQty'].forEach(id => { const e = calcEl(id); if (e) e.value = ''; });
+  calcEl('calcFormTitle').textContent = '➕ نئی چیز شامل کریں';
+  calcEl('calcSaveBtn').textContent = '💾 محفوظ کریں';
+  calcSetType('w');
+  calcShowForm(false);
+}
+
+// ---------- محفوظ / ایڈٹ / حذف ----------
+function calcSaveItem() {
+  const name = calcVal('calcName').trim();
+  const nameEn = calcVal('calcNameEn').trim();
+  const qty = parseFloat(calcVal('calcQty'));
+  const unit = calcVal('calcQtyUnit');
+  const price = parseFloat(calcVal('calcPrice'));
+  if (!name && !nameEn) { showToast('⚠️ چیز کا نام لکھیں'); return; }
+  if (!(qty > 0)) { showToast('⚠️ مقدار لکھیں'); return; }
+  if (!(price > 0)) { showToast('⚠️ خریداری قیمت لکھیں'); return; }
+
+  const list = calcItems();
+  if (!calcEditId) {
+    const n = calcNorm(name || nameEn);
+    const dup = list.find(i => calcNorm(i.name) === n || (i.nameEn && calcNorm(i.nameEn) === n));
+    if (dup && !confirm('اسی نام کی چیز پہلے سے موجود ہے۔\nبہتر ہے اسے ایڈٹ کر کے نئی قیمت ڈالیں۔\n\nپھر بھی نئی چیز شامل کریں؟')) return;
+  }
+  const item = {
+    id: calcEditId || Date.now(),
+    name: name || nameEn,
+    nameEn: nameEn,
+    type: calcType,
+    qty: qty,
+    unit: unit,
+    price: price,
+    baseQty: qty * CALC_UNITS[unit].f,
+    updatedAt: localDate()
+  };
+  if (calcEditId) {
+    const idx = list.findIndex(i => i.id === calcEditId);
+    if (idx >= 0) list[idx] = item; else list.unshift(item);
+  } else {
+    list.unshift(item);
+  }
+  saveData();
+  const wasEdit = !!calcEditId;
+  calcResetForm();
+  renderCalc();
+  showToast(wasEdit ? '✅ اپڈیٹ ہو گیا' : '✅ چیز محفوظ ہو گئی');
+}
+function calcEditItem(id) {
+  const it = calcItems().find(i => i.id === id);
+  if (!it) return;
+  calcShowForm(true);
+  calcEditId = id;
+  calcEl('calcFormTitle').textContent = '✏️ ایڈٹ: ' + it.name + ' (نئی قیمت / مقدار ڈالیں)';
+  calcEl('calcSaveBtn').textContent = '💾 اپڈیٹ کریں';
+  calcEl('calcName').value = it.name || '';
+  calcEl('calcNameEn').value = it.nameEn || '';
+  calcSetType(it.type);
+  calcEl('calcQtyUnit').value = it.unit;
+  calcEl('calcQty').value = it.qty;
+  calcEl('calcPrice').value = it.price;
+  calcUpdatePreview();
+}
+function calcDeleteItem(id) {
+  const it = calcItems().find(i => i.id === id);
+  if (!it) return;
+  if (!confirm('"' + it.name + '" حذف کریں؟')) return;
+  appData.calcItems = calcItems().filter(i => i.id !== id);
+  calcOpen.delete(id);
+  saveData();
+  renderCalc();
+  showToast('🗑️ حذف ہو گیا');
+}
+
+// ---------- لسٹ ----------
+function calcItemCustomRun(id) {
+  const it = calcItems().find(i => i.id === id);
+  const out = calcEl('calcCustOut_' + id);
+  if (!it || !out) return;
+  out.textContent = calcCustomOut(calcVal('calcCustQty_' + id), calcVal('calcCustUnit_' + id), it.price / it.baseQty);
+}
+function renderCalc() {
+  const listEl = calcEl('calcList');
+  if (!listEl) return;
+  const all = calcItems();
+  const q = calcNorm(calcVal('calcSearch'));
+  const items = q ? all.filter(i => calcNorm(i.name).includes(q) || calcNorm(i.nameEn).includes(q)) : all;
+
+  calcEl('calcCount').textContent = q
+    ? `🔍 ${items.length} نتیجے (کل ${all.length} اشیاء)`
+    : `📦 کل محفوظ اشیاء: ${all.length}`;
+
+  if (!items.length) {
+    listEl.innerHTML = `<div class="calc-empty">${all.length ? 'کوئی چیز نہیں ملی' : 'ابھی کوئی چیز محفوظ نہیں — اوپر "نئی چیز شامل کریں" دبائیں'}</div>`;
+    return;
+  }
+  listEl.innerHTML = items.map(it => {
+    const per = it.price / it.baseQty;
+    const T = CALC_TYPES[it.type];
+    const isOpen = calcOpen.has(it.id);
+    return `<div class="calc-item">
+      <div class="calc-row" onclick="calcToggleItem(${it.id})">
+        <div class="calc-row-info">
+          <div class="calc-row-name">${calcEsc(it.name)}</div>
+          <div class="calc-row-sub">خریداری: ${calcFmt(it.qty)} ${CALC_UNITS[it.unit].label} = ₨ ${calcFmt(it.price)}</div>
+        </div>
+        <div class="calc-row-price">
+          <div class="calc-row-price-val">₨ ${calcFmt(per)}</div>
+          <div class="calc-row-price-lbl">${T.perLabel}</div>
+        </div>
+        <div class="calc-row-arrow" id="calcRowArrow_${it.id}">${isOpen ? '▲' : '▼'}</div>
+      </div>
+      <div class="calc-item-body" id="calcItemBody_${it.id}" style="display:${isOpen ? 'block' : 'none'};">
+        <div class="calc-item-actions">
+          <div class="calc-item-en">${it.nameEn ? calcEsc(it.nameEn) : ''}</div>
+          <div class="calc-item-btns">
+            <button class="btn btn-outline btn-sm" onclick="calcEditItem(${it.id})">✏️ ایڈٹ</button>
+            <button class="btn btn-danger btn-sm" onclick="calcDeleteItem(${it.id})">🗑️ حذف</button>
+          </div>
+        </div>
+        ${calcResultHTML(it.type, per)}
+        ${calcCustomBox('calcCustQty_' + it.id, 'calcCustUnit_' + it.id, 'calcCustOut_' + it.id, 'calcItemCustomRun(' + it.id + ')', it.type)}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// لائن پر کلک: تفصیل کھولنا / بند کرنا
+function calcToggleItem(id) {
+  const body = calcEl('calcItemBody_' + id);
+  const arrow = calcEl('calcRowArrow_' + id);
+  if (!body) return;
+  const open = body.style.display === 'none';
+  body.style.display = open ? 'block' : 'none';
+  if (arrow) arrow.textContent = open ? '▲' : '▼';
+  if (open) calcOpen.add(id); else calcOpen.delete(id);
+}
+
+// شروع میں فارم تیار کریں
+calcSetType('w');
 </script>
 </body>
 </html>
